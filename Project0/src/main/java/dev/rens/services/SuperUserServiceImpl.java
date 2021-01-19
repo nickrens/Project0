@@ -30,14 +30,6 @@ public class SuperUserServiceImpl extends UserServiceImpl implements SuperUserSe
 	}
 
 	public boolean deleteUser(User user) {
-//		if(udao.deleteUser(user.getUserID())) {
-//			Set<Account> myAccounts = ShowBankAccounts(user);
-//			for(Account a: myAccounts) {
-//				adao.deleteAccount(a.getAccountID());
-//			}
-//			return true;
-//		}
-//		return false;
 		return udao.deleteUser(user.getUserID());
 	}
 
