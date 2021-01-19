@@ -16,11 +16,6 @@ private static Connection conn = null;
 			if(conn == null) {
 				Class.forName("oracle.jdbc.driver.OracleDriver");
 				
-//				String endpoint = "database-1.cl4pmwb5pwnv.us-east-1.rds.amazonaws.com";
-//				String url = "jdbc:oracle:thin:@" + endpoint + ":1521:ORCL";
-//				String username = "nickrens";
-//				String password = "password";
-				
 				Properties props = new Properties();
 				FileInputStream input = new FileInputStream(JDBCConnection.class.getClassLoader().getResource("connection.properties").getFile().replaceAll("%20", " "));
 				props.load(input);				
@@ -43,10 +38,5 @@ private static Connection conn = null;
 		
 		
 		return null;
-	}
-	
-	public static void main(String[] args) {
-		Connection c = getConnection();
-		System.out.println(c);
 	}
 }
