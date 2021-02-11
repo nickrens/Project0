@@ -20,4 +20,14 @@ A Banking Application where you can make keep track of your funds in different a
 * A user can logout. 
 
 ## Getting Started
-git clone 
+git clone https://github.com/nickrens/Project0.git
+
+Make sure you have java 8 or higher installed
+Add a connection.properties file in src/main/resources
+
+in this file add these fields as they relate to your database
+* url
+* username
+* password
+  
+Open project in Eclipe and run as Java Application
